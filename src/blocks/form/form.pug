@@ -1,0 +1,15 @@
+.form 
+  .inner__form 
+    form(method='post' action='/')
+      div 
+        .form__title Get Your Free Trading Session
+        input(type='text' class="input-text" name='name' placeholder="Full Name")
+        input(type="email" class="input-email" name="email" placeholder="Email*")
+        div.phoneInput
+            img.tel__input(src="../../assets/United_Kingdom.png")
+            Select.selectInput
+                option(value='1') +1
+                option(value='2') +2
+            input(type="tel" class="input-tel" id="phone" placeholder= "Phone*")
+        p.form__descr User agrees to let WhatsApp Signals share basic contact details with third-party partners that may contact the user about additional related investing products, offerings, and services that may be relevant.
+        button(type="submit" class="form__btn") Claim Your Signals Now!

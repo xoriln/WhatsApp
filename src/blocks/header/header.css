@@ -1,0 +1,61 @@
+.header{
+    position: absolute;
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    min-width: 1920px;
+    min-height: 1080px;
+}
+[dir="rtl"] .header{
+    position: absolute;
+    background-image: url(../assets/hero-bg-rtl.png);
+    background-repeat: no-repeat;
+    min-width: 1920px;
+    min-height: 1080px;
+}
+
+.header__logo{
+    padding: 43px 0 0 36px;
+}
+[dir="rtl"] .header__logo{
+    padding: 43px 42px 0 0;
+}
+
+
+@media (max-width: 768px) {
+    .header{
+        background-image: url(../assets/hero-bg-mobile.png);
+        min-width: 768px;
+        height: 100vh;
+        z-index: 10;
+    }
+    [dir="rtl"] .header{
+        min-width: 768px;
+        height: 100vh;
+    }
+    .header__logo{
+        padding: 40px 0 0 298px;
+    }
+    [dir="rtl"] .header__logo{
+        padding: 40px 298px 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header{
+        min-width: 480px;
+        background-image: url(../assets/hero-bg-mobile-min.png);    
+        background-repeat: no-repeat;
+        height: 812px;
+    }
+    [dir="rtl"] .header{
+        min-width: 480px;
+        height: 800px;
+        min-height: 852px;   
+    }
+    .header__logo{
+        padding: 38px 0 0 153px;
+    }
+    [dir="rtl"] .header__logo{
+        padding: 40px 154px 0 0;
+    }
+}

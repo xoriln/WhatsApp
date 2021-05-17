@@ -1,0 +1,112 @@
+.form{
+    position: fixed;
+    left: 1427px;
+    top: 279px;
+    width: 443px;
+    height: 534px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    box-shadow: 5px 3px 16px #00000029;
+    z-index: 999;
+}
+[dir="rtl"] .form{
+    top: 279px;
+    left: 30px;
+}
+
+.inner__form{
+    padding: 33px 45px 42px 47px;
+}
+
+.form__title{
+    font: normal normal bold 27px/41px 'Assistant';
+    padding-bottom: 48px;
+}
+
+.input-text{
+    width: 350px;
+    border-bottom: 1px solid #E8E3D9;
+    margin-bottom: 65px;
+    padding-bottom: 4px;
+}
+.input-text::-webkit-input-placeholder{
+    font: normal normal normal 18px/23px Assistant;
+    color: var(--unnamed-color-161b39);
+}
+.input-email{
+    width: 350px;
+    border-bottom: 1px solid #E8E3D9;
+    margin-bottom: 65px;
+    padding-bottom: 4px;
+}
+
+.input-email::-webkit-input-placeholder{
+    font: normal normal normal 18px/23px Assistant;
+    color: var(--unnamed-color-161b39);
+}
+
+.input-tel{
+    width: 350px;
+    border-bottom: 1px solid #E8E3D9;
+}
+
+.input-tel::-webkit-input-placeholder{
+    font: normal normal normal 18px/23px 'Assistant';
+    color: var(--unnamed-color-161b39);
+}
+
+.form__descr{
+    font: normal normal normal 14px/18px 'Assistant';
+    width: 356px;
+}
+
+button{
+    margin-top: 10px;
+    width: 351px;
+    height: 55px;
+    background: #4BB85D 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    font: normal normal bold 20px/26px 'Assistant';
+    color: #fff;
+}
+
+.tel__input{
+    width: 26px;
+    height: 26px;
+    margin: 0 10px 4px 0;
+}
+[dir="rtl"] .tel__input{
+    width: 26px;
+    height: 26px;
+    padding: 0 10px 4px -38px;
+}
+
+.phoneInput{
+    width: 75px;
+    height: 29px;
+    border-bottom: 1px solid #E8E3D9;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 13px;
+}
+
+[dir="rtl"] .phoneInput{
+    flex-direction: row-reverse;
+    margin-right: 264px;
+}
+
+.selectInput{
+    display: flex;
+    margin-right: 32px;
+}
+
+[dir="rtl"] .selectInput{
+    margin-right: 70px;
+}
+
+
+@media (max-width: 768px) {
+    .form{
+        display: none;
+    }
+}

@@ -1,0 +1,39 @@
+.hero__button-title{
+    font: normal normal bold 20px/26px 'Assistant';
+    color: #fff;
+    text-align: center;
+    padding-top: 13px;
+}
+
+@media (max-width: 768px) {
+    .hero__button{
+        display: block;
+        position: fixed;
+        z-index: 12;
+    }
+    [dir="rtl"] .hero__button{
+        margin-top: 972px;
+        margin-left: 160px;
+        margin-right: 177px;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__button{
+        width: 431px;
+        height: 55px;
+        z-index: 9;
+        display: block;
+        top: 730px;
+        left: 25px;
+    }
+    [dir="rtl"] .hero__button{
+        top: 0;
+        left: 0;
+        margin-top: 775px;
+        margin-left: 26px;
+        margin-right: 0;
+    }
+}

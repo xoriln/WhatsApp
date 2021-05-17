@@ -1,0 +1,189 @@
+.hero{
+    position: relative;
+}
+
+.hero__inner{
+    padding: 305px 0 0 259px;
+    display: flex;
+    height: 1077px;
+}
+[dir="rtl"] .hero__inner{
+    padding: 305px 259px 0 0;
+}
+
+.hero__inner-text{
+    max-width: 590px;
+}
+
+.hero__title{
+    font: normal normal bold 50px/60px 'Lato';
+    padding-bottom: 32px;
+}
+
+.hero__descr{
+    width: 532px;
+    font: normal normal normal 22px/30px 'Lato';
+    padding-bottom: 260px;
+}
+
+.hero__records{
+    display: flex;
+    width: 617px;
+}
+
+.record__title{
+    color: #fff;
+    width: 200px;
+    font: normal normal bold 50px 'Lato';
+}
+
+.record__title span{
+    font-size: 36px;
+    padding-bottom: 7px;
+}
+
+.record__descr{
+    font: normal normal bold 20px/22px 'Lato';
+}
+
+.hero__record:last-child{
+    padding-left: 17px;
+}
+[dir="rtl"] .hero__record:last-child{
+    padding-right: 17px;
+}
+
+.hero__inner-image{
+    position: absolute;
+    padding-left: 565px;
+    margin-top: -100px;
+}
+
+[dir="rtl"] .hero__inner-image{
+    padding-left: 0;
+    padding-right: 565px;
+    margin-top: -100px;
+}
+
+@media (max-width: 768px) {
+    .hero{
+        z-index: 11;
+    }
+    .hero__inner{
+        padding: 0;
+        min-width: 480px;
+        height: 1024px;
+    }
+    [dir="rtl"] .hero__inner{
+        padding: 47px 0 0 0;
+    }
+
+    .hero__inner-text{
+        margin: 0 28px;
+        padding-top: 150px;
+        min-width: 712px;
+    }
+    [dir="rtl"] .hero__inner-text{
+        padding-top: 100px;
+    }
+
+    .hero__title{
+        font: normal normal bold 41px 'Lato';
+        text-align: center;
+        padding-bottom: 11px;
+    }
+    .hero__title br{
+        display: none;
+    }
+    .hero__descr{
+        margin: 0 auto;
+        width: 634px;
+        font: normal normal normal 22px 'Lato';
+        padding-bottom: 124px;
+    }
+    [dir="rtl"] .hero__descr{
+        padding-bottom: 130px;
+    }
+
+    .hero__records{
+        flex-direction: column-reverse;
+        width: 200px;
+    }
+    .hero__record{
+        padding-bottom: 48px;
+        text-align: center;
+    }
+    .record__descr{
+        color: #fff;
+    }
+    .hero__record:last-child{
+        padding-left: 0;
+    }
+    .hero__inner-image{
+        position: absolute;
+        padding-left: 225px;
+        margin-top: 285px;
+    }
+    [dir="rtl"] .hero__inner-image{
+        margin-top: 260px;
+        padding-right: 225px;
+    }
+    .hero__mobile-img{
+        width: 538px;
+        height: 627px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero__inner{
+        height: 812px;
+    }
+    .hero__inner-text{
+        margin: 0;
+        padding-top: 130px;
+        min-width: 480px;
+    }
+    .hero__title{
+        font: normal normal bold 39px 'Lato';
+        text-align: center;
+        padding-bottom: 400px;
+    }
+    .hero__title br{
+        display: block;
+    }
+    .hero__descr{
+        display: none;
+    }
+    .hero__records{
+        flex-direction: row;
+    }
+    .record__title{
+        width: 129px;
+        padding-bottom: 4px;
+    }
+    .hero__records .hero__record:nth-child(2) .record__title{
+        padding-left: 72px;
+    }
+    [dir="rtl"] .hero__records .hero__record:nth-child(2) .record__title{
+        padding-right: 72px;
+    }
+    [dir="rtl"] .hero__record:last-child {
+        padding-right: 0;
+    }
+    .hero__records .hero__record:nth-child(2) .record__descr{
+        width: 220px;
+    }
+    .hero__inner-image{
+        position: absolute;
+        padding-left: 80px;
+        margin-top: 300px;
+    }
+    [dir="rtl"] .hero__inner-image{
+        padding-right: 80px;
+    }
+    .hero__mobile-img{
+        width: 320px;
+        height: 373px;
+    }
+}

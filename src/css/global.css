@@ -1,0 +1,9 @@
+.hero__button{
+    display: none;
+    width: 431px;
+    height: 55px;
+    top: 954px;
+    left: 160px;
+    background: #4BB85D 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+}
